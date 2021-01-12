@@ -15179,7 +15179,7 @@ Source: DCJ0202.pdf</description>
 <part name="C10" library="SparkFun" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="IC3" library="Testing" deviceset="V_REG_LM1117" device="ALT1" value="LM1117"/>
-<part name="R14" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="715"/>
+<part name="R14" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="710"/>
 <part name="R15" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="240"/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun" deviceset="DIODE-SCHOTTKY" device="_" value="MBRA140"/>

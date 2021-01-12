@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -1452,20 +1453,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="21"/>
 <rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="21"/>
 <rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="SparkFun-Aesthetics">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51">http://creativecommons.org/licenses/by-sa/3.0</text>
-<text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
 </package>
 </packages>
 </library>
@@ -3104,10 +3091,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3230,9 +3221,6 @@ design rules under a new name.</description>
 <element name="D1" library="SparkFun" package="SMA-DIODE" value="MBRA140" x="14.605" y="9.779"/>
 <element name="DIS1" library="lcd_16X2" package="LCD_16X2_PAC" value="TUXGR_16X2_R2" x="97.155" y="32.004" rot="R270"/>
 <element name="F1" library="SparkFun" package="PTC-1206" value="500mA" x="14.478" y="76.962"/>
-<element name="FRAME2" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-14.097" y="23.114" rot="R90">
-<attribute name="IIITDUINO" value="" x="-14.097" y="23.114" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="IC3" library="Testing" package="SOT223-ALT1" value="LM1117" x="23.114" y="11.303" rot="R180"/>
 <element name="JP1" library="jumper" package="JP1" value="" x="5.334" y="64.389" rot="R90"/>
 <element name="JP7" library="jumper" package="JP2" value="" x="11.557" y="55.753" rot="R90"/>
@@ -3277,58 +3265,58 @@ design rules under a new name.</description>
 <element name="S5" library="switch" package="B3F-10XX" value="" x="5.207" y="37.211" rot="R90"/>
 <element name="S6" library="switch" package="B3F-10XX" value="" x="5.334" y="16.891" rot="R90"/>
 <element name="SP1" library="buzzer" package="AL11P" value="AL11P" x="62.357" y="13.208" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="62.357" y="13.208" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="62.357" y="13.208" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="62.357" y="13.208" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="62.357" y="13.208" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="62.357" y="13.208" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="62.357" y="13.208" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="SV1" library="con-lstb" package="MA05-1" value="" x="41.529" y="77.978">
-<attribute name="OC_NEWARK" value="unknown" x="41.529" y="77.978" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="41.529" y="77.978" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="41.529" y="77.978" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="41.529" y="77.978" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="41.529" y="77.978" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="41.529" y="77.978" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SV2" library="con-lstb" package="MA05-1" value="" x="11.303" y="38.862" rot="R90">
-<attribute name="OC_NEWARK" value="unknown" x="11.303" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="11.303" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="11.303" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="11.303" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="11.303" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="11.303" y="38.862" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="SV3" library="con-lstb" package="MA07-1" value="" x="90.805" y="24.765" rot="R270">
-<attribute name="OC_NEWARK" value="unknown" x="90.805" y="24.765" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="90.805" y="24.765" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="90.805" y="24.765" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="90.805" y="24.765" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="90.805" y="24.765" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="90.805" y="24.765" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SV4" library="con-lstb" package="MA03-1" value="" x="52.324" y="2.54">
-<attribute name="OC_NEWARK" value="unknown" x="52.324" y="2.54" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="52.324" y="2.54" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="52.324" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="52.324" y="2.54" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="52.324" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="52.324" y="2.54" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SV5" library="con-lstb" package="MA08-1" value="" x="85.217" y="78.105" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="85.217" y="78.105" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="85.217" y="78.105" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="85.217" y="78.105" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="85.217" y="78.105" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="85.217" y="78.105" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="85.217" y="78.105" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="SV6" library="con-lstb" package="MA08-1" value="" x="67.437" y="2.54" rot="MR180">
-<attribute name="OC_NEWARK" value="unknown" x="67.437" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="" x="67.437" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="67.437" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="" x="67.437" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="67.437" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="67.437" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="SV7" library="con-lstb" package="MA10-1" value="" x="61.341" y="77.978" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="61.341" y="77.978" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="61.341" y="77.978" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="61.341" y="77.978" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="61.341" y="77.978" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="61.341" y="77.978" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="61.341" y="77.978" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="SV8" library="con-lstb" package="MA06-1" value="" x="86.614" y="2.54" rot="MR180">
-<attribute name="OC_NEWARK" value="unknown" x="86.614" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="" x="86.614" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="86.614" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="" x="86.614" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="86.614" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="86.614" y="2.54" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="T1" library="transistor" package="TO92" value="BC547" x="65.405" y="25.527" rot="R180"/>
 <element name="TP1" library="SparkFun-Passives" package="PAD.03X.05" value="TP-3x5" x="17.399" y="30.861"/>
@@ -3344,17 +3332,17 @@ design rules under a new name.</description>
 <element name="U2" library="SparkFun" package="SOT23-5" value="MIC5205" x="23.876" y="78.613"/>
 <element name="Y1" library="SparkFun-FreqCtrl" package="RESONATOR-SMD" value="16MHz" x="50.927" y="61.341" rot="R270"/>
 <element name="SV9" library="con-lstb" package="MA03-2" value="" x="24.765" y="37.211">
-<attribute name="OC_NEWARK" value="unknown" x="24.765" y="37.211" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="24.765" y="37.211" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.765" y="37.211" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="24.765" y="37.211" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="24.765" y="37.211" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="24.765" y="37.211" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J2" library="dc-jack" package="DCJ0202" value="DCJ0202" x="4.953" y="6.731" rot="R270"/>
 <element name="S7" library="switch-omron" package="B3F-10XX" value="" x="24.892" y="28.321">
-<attribute name="OC_NEWARK" value="36M3542" x="24.892" y="28.321" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="B3F-1000" x="24.892" y="28.321" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="24.892" y="28.321" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="B3F-1000" x="24.892" y="28.321" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="24.892" y="28.321" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="36M3542" x="24.892" y="28.321" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U4" library="SparkFun-DigitalIC" package="DIL28-3" value="ATMEGA328P_PDIP" x="68.072" y="39.497" rot="R180"/>
 </elements>
@@ -4999,6 +4987,13 @@ design rules under a new name.</description>
 <via x="61.9125" y="12.7" extent="1-16" drill="0.6096"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="5,16,c94856ba7b2bb4c4"/>
 </errors>
